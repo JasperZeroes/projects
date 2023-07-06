@@ -53,6 +53,16 @@ python3 -m pip install virtualenv
 pip install -r requirements.txt
 ```
 
+### Running the application
+To run the Flask application, navigate to the src directory and run the run.py script as follows:
+
+```bash
+python run.py
+```
+This will start the Flask development server, and you can access the application by visiting http://localhost:5000 in your web browser.
+
+
+
 
 ## Project Organisation
 
