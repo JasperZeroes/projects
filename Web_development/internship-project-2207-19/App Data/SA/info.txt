@@ -1,0 +1,6 @@
+##Places
+# Johannesburg
+# Cape Town
+# Durban
+# Pretoria
+# Port Elizabeth

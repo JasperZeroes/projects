@@ -1,0 +1,163 @@
+body {
+    background: #fafafa;
+    color: #333333;
+    margin-top: 5rem;
+    margin: 10;
+    padding: 0;
+  }
+
+  .container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px; /* adjust the value to your preference */
+  box-sizing: border-box;
+}
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+  }
+  
+  .bg-steel {
+    background-color: #242425;
+  }
+  
+  .site-header .navbar-nav .nav-link {
+    color: white;
+  }
+  
+  .site-header .navbar-nav .nav-link:hover {
+    color: yellowgreen;
+  }
+  
+  .site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+  }
+  
+  .content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+  
+
+  a {
+    color: yellowgreen;
+
+  }
+  .article-title {
+    color: #444444;
+  }
+  
+  a.article-title:hover {
+    color: yellowgreen;
+    text-decoration: none;
+  }
+  
+  .article-content {
+    white-space: pre-line;
+  }
+  
+  .article-img {
+    height: 65px;
+    width: 65px;
+    margin-right: 16px;
+  }
+  
+  .article-metadata {
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #e3e3e3
+  }
+  
+  .article-metadata a:hover {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .article-svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+  }
+  
+  .account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .account-heading {
+    font-size: 2.5rem;
+  }
+
+
+  .about-container {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 50px;
+  }
+  
+  .about-container h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .about-container p {
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  .about-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .about-image {
+    width: 30%;
+  }
+  
+  .about-image img {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary {
+    background-color: #242425;
+    color: yellowgreen;
+  }
+  
+
+  .button {
+    background-color: rgb(71, 118, 131) ;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .card {
+    height: 200px;
+    display: flex;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-body {
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+
+  .custom-yellowgreen {
+    color: yellowgreen;
+  }
+  
+  .custom-bg {
+    background-color: #242425;
+  }
+  
