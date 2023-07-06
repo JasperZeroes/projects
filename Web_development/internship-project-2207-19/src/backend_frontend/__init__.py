@@ -13,16 +13,12 @@ app = Flask(__name__)
 CORS(app)
 
 #app.secret_key = secrets.token_hex(16)
-app.secret_key = "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"
+app.secret_key = "Enter your generated app secret key"
 
 # to allow Http traffic for local dev
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1" 
 
-GOOGLE_CLIENT_ID = "1086948666963-5nneki8s943gbh1intabfo2lh3qigu96.apps.googleusercontent.com"
-
-#from flask_session import Session
-#app.config["SESSION_TYPE"] = "filesystem"
-#Session(app)
+GOOGLE_CLIENT_ID = "Enter your google client ID"
 
 # SQLite configuration (For Development)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///workcation_finder.db'
