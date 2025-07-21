@@ -54,28 +54,31 @@ function App() {
 
   const projects = [
     {
-      title: "Freelancer Job Alert (SaaS)",
+      title: "Uptrackr (SaaS)",
       tech: "Python, Django, Upwork rss, Cron Jobs",
       description: "A SaaS app that alerts Upwork freelancers when relevant job postings go live. It scrapes and filters jobs based on category and skills, then sends real-time email alerts.",
       outcome: "Helped early users reduce job search time by over 60%",
       icon: <Target className="w-6 h-6" />,
-      githubLink: "https://github.com/JasperZeroes/uptrackr/tree/master"
+      githubLink: "https://github.com/JasperZeroes/uptrackr/tree/master",
+      image: "/uptrackr.png"
     },
     {
-      title: "Multilingual Chatbot",
-      tech: "Python, NLP",
+      title: "LinguaDetect Chatbot",
+      tech: "Python, NLP, Streamlit, Comet",
       description: "Developed a chatbot capable of recognizing and responding in multiple South African languages. Aimed at improving accessibility and reducing communication barriers.",
       outcome: "Successfully bridged communication gaps for multilingual audiences",
       icon: <Users className="w-6 h-6" />,
-      githubLink: "https://github.com/JasperZeroes/language_identification_hackathon"
+      githubLink: "https://github.com/JasperZeroes/language_identification_hackathon",
+      image: "/chatbot.PNG"
     },
     {
       title: "WorkCation Finder",
       tech: "Flask, Python, SQLite, REST API",
-      description: "Led a team of 4 developers to build a web application that helps remote workers discover coworking spaces. Integrated location-based services and searchable database.",
+      description: "Led a team of 4 developers to build a web application that helps remote workers discover coworking spaces incases of internet disruptions or electricity failure. Integrated Google map API for location-based services and searchable database.",
       outcome: "Improved visibility of underused workspaces in multiple cities",
       icon: <MapPin className="w-6 h-6" />,
-      githubLink: "https://github.com/JasperZeroes/projects/tree/master/Web_development/internship-project-2207-19"
+      githubLink: "https://github.com/JasperZeroes/projects/tree/master/Web_development/internship-project-2207-19",
+      image: "/workcation.png"
     },
     {
       title: "HR Automation System",
@@ -83,7 +86,8 @@ function App() {
       description: "Built an AI-powered HR tool that matched over 2,000 freelancers to jobs based on skills and job descriptions. Leveraged LLMs for semantic matching.",
       outcome: "Reduced manual job-matching time by 35% and improved placement accuracy by 23%",
       icon: <Briefcase className="w-6 h-6" />,
-      githubLink: "https://github.com/jasperzeroes"
+      githubLink: "https://github.com/jasperzeroes",
+      image: "/hr-automation.png"
     }
   ];
 
@@ -485,12 +489,23 @@ function App() {
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <div key={index} className="bg-slate-800/50 p-8 rounded-xl hover:bg-slate-800/70 transition-all duration-200 group">
+                
+                {/* Project Image */}
+                {project.image && (
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-48 object-cover rounded-lg mb-6 border border-slate-700"
+                  />
+                )}
+
                 <div className="flex items-center gap-4 mb-4">
                   <div className="text-blue-400 group-hover:text-purple-400 transition-colors">
                     {project.icon}
                   </div>
                   <h3 className="text-xl font-semibold">{project.title}</h3>
                 </div>
+                
                 <p className="text-sm text-blue-400 mb-4">{project.tech}</p>
                 <p className="text-gray-300 mb-4 leading-relaxed">{project.description}</p>
                 <div className="bg-green-900/30 border border-green-500/30 p-3 rounded-lg mb-4">
@@ -511,6 +526,7 @@ function App() {
           </div>
         </div>
       </section>
+
 
       {/* Experience Section */}
       <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
