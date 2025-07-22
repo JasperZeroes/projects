@@ -135,9 +135,9 @@ function App() {
   ];
 
   const skills = {
-    languages: ["Python", "JavaScript", "SQL", "TypeScript", "C", "C#", "HTML5", "CSS3", "PHP", "R"],
-    frameworks: ["Django", "Flask", "OpenAI API", "REST APIs", "Git", "Node.js"],
-    databases: ["MySQL", "SQLite", "MongoDB", "PostgreSQL", "SQL Server"],
+    languages: ["Python", "JavaScript", "Dart", "TypeScript", "C", "C#", "SQL", "HTML5", "CSS3", "PHP", "R"],
+    frameworks: ["Django", "Flask", "Flutter", "OpenAI API", "REST APIs", "Git","GitHub", "Node.js"],
+    databases: ["MySQL", "PostgreSQL", "MSSQL Server", "SQLite", "MongoDB"],
     other: ["Web Scraping", "Selenium", "Webdriver", "PlayWright", "Scrapy", "Automation", "AI/ML Integration", "Streamlit", "API Development", "Comet", "Notion"]
   };
 
@@ -145,17 +145,17 @@ function App() {
     {
       title: "BSc in Computer Science (2025)",
       institution: "University of the People, USA",
-      score: "GPA: 3.4 / 4.0"
+      score: ""
     },
     {
       title: "Diploma in Software Engineering (2024)",
       institution: "ALX, Africa ",
-      score: "Graduated with Distinction"
+      score: ""
     },
     {
       title: "Advanced Diploma in Data Science (2023)",
       institution: "ExploreAI, South Africa",
-      score: "BlackBelt - Top 5% of Class"
+      score: ""
     }
   ];
 
@@ -185,73 +185,73 @@ function App() {
 
 
   const certifications = [
-    {
-      title: "AI Starter Kit",
-      issuer: "ALX",
-      date: "May 2025",
-      link: null
-    },
-    {
-      title: "AWS Academy Graduate - AWS Academy Cloud Foundations",
-      issuer: "AWS Academy",
-      date: "03/03/2023",
-      link: "https://www.credly.com/go/ldoDPGpU"
-    },
-    {
-      title: "Introduction to Career Skills in Software Development",
-      issuer: "ALX",
-      date: "Feb 28, 2025",
-      link: null
-    },
-    {
-      title: "Incubator Programme, Applied Data Science I: Scientific Computing & Python (with honors)",
-      issuer: "WorldQuant University",
-      date: null, // Date not explicitly provided, can be added if known
-      link: "https://www.credly.com/badges/5aa2d8bc-2e93-4c29-8378-f8733860bba"
-    },
-    {
-      title: "Problem Solving",
-      issuer: "HackerRank",
-      date: "Dec 2024",
-      link: "https://www.hackerrank.com/certificates/iframe/2daa82e15294"
-    },
-    {
-      title: "Programming for Everybody (Getting Started with Python)",
-      issuer: "Coursera",
-      date: "Feb 2021",
-      link: "https://www.coursera.org/account/accomplishments/certificate/A9HEGMYWDJPT"
-    },
-    {
-      title: "Python Data Structures",
-      issuer: "Coursera",
-      date: "March 2021",
-      link: "https://www.coursera.org/account/accomplishments/certificate/JNQ97RX6C47G"
-    },
-    {
-      title: "Python Object Oriented Programming",
-      issuer: "Udemy",
-      date: "Feb 2021",
-      link: "https://www.udemy.com/certificate/UC-2b87e6dd-45b3-4e92-8cd5-373b9a9c29c3/"
-    },
-    {
-      title: "Business Development and Funding for Startups",
-      issuer: "StartUp4Development",
-      date: null, // Date not explicitly provided, can be added if known
-      link: "https://drive.google.com/file/d/19XKfKreG8prU_0_pt-xermruA6KWQnNu/view"
-    },
-    {
-      title: "Website Design and Development (Backend)",
-      issuer: "Side Hustle",
-      date: "August 2021",
-      link: "https://drive.google.com/drive/u/0/folders/1rMTBYhKyU5w858XioBRCgVi8saxYHyIU"
-    },
-    {
-      title: "Google Professional Analytics Certificate",
-      issuer: "Google",
-      date: "August 2023",
-      link: null
-    }
-  ];
+  {
+    title: "AI Starter Kit",
+    issuer: "ALX",
+    date: "May 2025",
+    link: null
+  },
+  {
+    title: "Introduction to Career Skills in Software Development",
+    issuer: "ALX",
+    date: "Feb 28, 2025",
+    link: null
+  },
+  {
+    title: "Problem Solving",
+    issuer: "HackerRank",
+    date: "Dec 2024",
+    link: "https://www.hackerrank.com/certificates/iframe/2daa82e15294"
+  },
+  {
+    title: "Google Professional Analytics Certificate",
+    issuer: "Google",
+    date: "August 2023",
+    link: null
+  },
+  {
+    title: "AWS Academy Graduate - AWS Academy Cloud Foundations",
+    issuer: "AWS Academy",
+    date: "March 2023",
+    link: "https://www.credly.com/go/ldoDPGpU"
+  },
+  {
+    title: "Website Design and Development (Backend)",
+    issuer: "Side Hustle",
+    date: "August 2021",
+    link: "https://drive.google.com/drive/u/0/folders/1rMTBYhKyU5w858XioBRCgVi8saxYHyIU"
+  },
+  {
+    title: "Incubator Programme, Applied Data Science I: Scientific Computing & Python (with honors)",
+    issuer: "WorldQuant University",
+    date: "May 2021",
+    link: "https://www.credly.com/badges/5aa2d8bc-2e93-4c29-8378-f8733860bba"
+  },
+  {
+    title: "Python Data Structures",
+    issuer: "Coursera",
+    date: "March 2021",
+    link: "https://www.coursera.org/account/accomplishments/certificate/JNQ97RX6C47G"
+  },
+  {
+    title: "Programming for Everybody (Getting Started with Python)",
+    issuer: "Coursera",
+    date: "Feb 2021",
+    link: "https://www.coursera.org/account/accomplishments/certificate/A9HEGMYWDJPT"
+  },
+  {
+    title: "Python Object Oriented Programming",
+    issuer: "Udemy",
+    date: "Feb 2021",
+    link: "https://www.udemy.com/certificate/UC-2b87e6dd-45b3-4e92-8cd5-373b9a9c29c3/"
+  },
+  {
+    title: "Business Development and Funding for Startups",
+    issuer: "StartUp4Development",
+    date: null,
+    link: "https://drive.google.com/file/d/19XKfKreG8prU_0_pt-xermruA6KWQnNu/view"
+  }
+];
 
   const hackathons = [
     {
@@ -375,7 +375,7 @@ function App() {
               </h2>
               <p className="text-lg md:text-xl text-gray-400 max-w-4xl leading-relaxed">
                 I build scalable web applications and automation systems using Python, Django, and modern web technologies. 
-                With over 2 years of industry experience and a passion for solving real-world problems, I help organizations 
+                With over 3+ years of industry experience and a passion for solving real-world problems, I help organizations 
                 bring ideas to life with clean, efficient, and scalable code.
               </p>
             </div>
