@@ -143,18 +143,18 @@ function App() {
 
   const education = [
     {
-      title: "Bachelors Degree in Computer Science",
-      institution: "University of the People",
+      title: "BSc in Computer Science (2025)",
+      institution: "University of the People, USA",
       score: "GPA: 3.4 / 4.0"
     },
     {
-      title: "Diploma in Software Engineering",
-      institution: "ALX Africa",
+      title: "Diploma in Software Engineering (2024)",
+      institution: "ALX, Africa",
       score: "Graduated with Distinction"
     },
     {
-      title: "Advanced Diploma in Data Science",
-      institution: "ExploreAI",
+      title: "Advanced Diploma in Data Science (2023)",
+      institution: "ExploreAI, South Africa",
       score: "BlackBelt - Top 5% of Class"
     }
   ];
