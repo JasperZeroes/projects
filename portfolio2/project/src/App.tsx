@@ -149,7 +149,7 @@ function App() {
     },
     {
       title: "Diploma in Software Engineering (2024)",
-      institution: "ALX, Africa",
+      institution: "ALX, Africa ",
       score: "Graduated with Distinction"
     },
     {
