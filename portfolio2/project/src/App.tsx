@@ -97,30 +97,39 @@ function App() {
       company: "Aptech Learning",
       period: "06/2024 – 07/2025",
       achievements: [
-        "Delivered hands-on software engineering training to 50+ learners",
-        "Designed and supervised real-world assessments and projects",
-        "Mentored students on web deployment and ML integrations",
-        "Achieved 85% student internship/job placement within 6 months"
+        // Situation + Task + Action + Result
+        "Led full-time technical training for over 50 students in a career-focused software engineering program. Designed a comprehensive curriculum blending theory with hands-on projects across JavaScript, React, HTML/CSS, and database design to simulate real-world engineering challenges.",
+        
+        // Task + Action
+        "Created, administered, and reviewed over 15 real-world project assessments. These covered areas like frontend development, API consumption, and CRUD app design—ensuring students were job-ready by simulating industry environments.",
+        
+        // Situation + Action + Result
+        "Mentored students in deploying web applications to cloud platforms, integrating machine learning models into existing systems, and debugging production-like issues. Provided individualized feedback during weekly code reviews.",
+        
+        // Result
+        "Achieved an 85% internship or full-time placement rate for students within 6 months of graduation by facilitating mock interviews, code-along sessions, and portfolio development workshops."
       ]
     },
     {
-      title: "Entry Level Software Developer",
-      company: "M365connect",
-      period: "02/2024 – 08/2024",
+      title: "Python Backend Developer (Contract)",
+      company: "M365Connect",
+      period: "01/2024 – 09/2024",
       achievements: [
-        "Built AI-powered job-matching engine using OpenAI LLMs",
-        "Automated data collection from 4 major job boards",
-        "Helped match 2,000+ freelancers to remote jobs"
+        "Designed and maintained robust backend systems using Django and Selenium to automate freelancer job-matching workflows, streamlining screening and boosting alignment accuracy.",
+        "Built an AI-powered engine that leveraged OpenAI LLMs to analyze job descriptions and skills, generating personalized job alerts for over 2,000 freelancers with significantly improved match rates.",
+        "Automated data ingestion from 4 major freelance platforms using Python and Selenium, reducing manual sourcing efforts by 80% and enabling near real-time job updates.",
+        "Integrated Microsoft 365 services—including Azure, Office 365, Copilot Studio, and Dynamics—while collaborating with cross-functional teams across Pakistan and Africa, leading to a 15% increase in platform engagement over 3 months."
       ]
     },
     {
       title: "Software Developer Intern",
       company: "ExploreAI",
-      period: "06/2022 – 06/2023",
+      period: "03/2023 – 06/2023",
       achievements: [
-        "Led backend development of a remote workspace discovery platform",
-        "Focused on clean data handling with Django and SQLite",
-        "Collaborated with a cross-functional, remote team"
+        "Led a 4-member development team to build 'WorkCation Finder'—a web app that helps remote workers locate and book suitable coworking spaces across Nigeria and South Africa.",
+        "Designed and deployed the app’s frontend and backend architecture using Flask, Python, and SQLite, resulting in a responsive interface and efficient data retrieval system.",
+        "Integrated Google Sign-In for seamless authentication and personalized onboarding, significantly improving first-time user retention.",
+        "Collaborated with stakeholders and QA testers to conduct usability testing, resolve production bugs, and optimize UX—leading to a 98% crash-free session rate at launch."
       ]
     }
   ];
@@ -347,45 +356,6 @@ function App() {
         )}
       </div>
     </nav>
-{/* 
-      Hero Section
-      <section id="home" className="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center py-20">
-            <div className="mb-8">
-              <h1 className="text-5xl md:text-7xl font-bold mb-6">
-                Hi, I'm <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-                  Chima Enyeribe
-                </span>
-              </h1>
-              <h2 className="text-2xl md:text-3xl text-gray-300 mb-6">
-                Backend-Focused Software Developer
-              </h2>
-              <p className="text-lg md:text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
-                I build scalable web applications and automation systems using Python, Django, and modern web technologies. 
-                With over 2 years of industry experience and a passion for solving real-world problems, I help organizations 
-                bring ideas to life with clean, efficient, and scalable code.
-              </p>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button
-                onClick={() => scrollToSection('projects')}
-                className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-4 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 flex items-center justify-center gap-2"
-              >
-                View My Work <ChevronRight size={20} />
-              </button>
-              <a 
-                href="/Chima_Enyeribe_Resume.pdf" 
-                download="Chima_Enyeribe_Resume.pdf"
-                className="border border-gray-500 hover:border-gray-400 px-8 py-4 rounded-lg font-semibold transition-all duration-200 hover:bg-slate-800 flex items-center justify-center gap-2"
-              >
-                <Download size={20} /> Download Resume
-              </a>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       {/* Hero Section */}
     <section id="home" className="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
