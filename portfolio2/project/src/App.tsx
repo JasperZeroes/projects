@@ -375,7 +375,7 @@ function App() {
               </h2>
               <p className="text-lg md:text-xl text-gray-400 max-w-4xl leading-relaxed">
                 I build scalable web applications and automation systems using Python, Django, and modern web technologies. 
-                With over 3+ years of industry experience and a passion for solving real-world problems, I help organizations 
+                With over 2+ years of industry experience and a passion for solving real-world problems, I help organizations 
                 bring ideas to life with clean, efficient, and scalable code.
               </p>
             </div>
