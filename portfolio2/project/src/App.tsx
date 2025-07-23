@@ -137,7 +137,7 @@ function App() {
   const skills = {
     languages: ["Python", "JavaScript", "Dart", "TypeScript", "C", "C#", "SQL", "HTML5", "CSS3", "PHP", "R"],
     frameworks: ["Django", "Flask", "Flutter", "OpenAI API", "REST APIs", "Git","GitHub", "Node.js"],
-    databases: ["MySQL", "PostgreSQL", "MSSQL Server", "SQLite", "MongoDB"],
+    databases: ["MySQL", "PostgreSQL", "MSSQL Server", "SQLite", "MongoDB", "Firebase", "Supabase"],
     other: ["Web Scraping", "Selenium", "Webdriver", "PlayWright", "Scrapy", "Automation", "AI/ML Integration", "Streamlit", "API Development", "Comet", "Notion"]
   };
 
