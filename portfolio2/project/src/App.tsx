@@ -143,17 +143,17 @@ function App() {
 
   const education = [
     {
-      title: "BSc in Computer Science (2025)",
+      title: "BSc, Computer Science - 2025",
       institution: "University of the People, USA",
       score: ""
     },
     {
-      title: "Diploma in Software Engineering (2024)",
+      title: "Diploma, Software Engineering - 2024",
       institution: "ALX, Africa ",
       score: ""
     },
     {
-      title: "Advanced Diploma in Data Science (2023)",
+      title: "Advanced Diploma, Data Science (2023)",
       institution: "ExploreAI, South Africa",
       score: ""
     }
