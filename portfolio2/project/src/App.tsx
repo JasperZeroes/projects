@@ -543,7 +543,7 @@ function App() {
                 <p className="text-gray-300">STEM Mentoring</p>
               </div>
               <div className="bg-slate-700/50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-2 text-green-400">Python, Django, APIs, JavaScript, Typescript, HTML, CSS</h3>
+                <h3 className="text-xl font-semibold mb-2 text-green-400">AI Engineering, Backend Systems, Workflow Automation, Microservices, Distributed Architecture</h3>
                 <p className="text-gray-300">Core Expertise</p>
               </div>
               <div className="bg-slate-700/50 p-6 rounded-lg">
