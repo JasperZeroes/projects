@@ -17,7 +17,10 @@ import {
   Target,
   Briefcase,
   Linkedin,
-  Trophy
+  Trophy,
+  Brain,
+  TrendingUp,
+  Wrench
 } from 'lucide-react';
 
 function App() {
@@ -54,6 +57,42 @@ function App() {
 
   const projects = [
     {
+      title: "AIMAS Recommendation Service",
+      tech: "Python, Prometheus, RabbitMQ, SQLite, OpenAI API",
+      description: "An event-driven AI microservice that consumes infrastructure metrics, applies deterministic rules and optional LLM analysis, and publishes actionable recommendations through RabbitMQ.",
+      outcome: "Enabled real-time incident recommendation generation using hybrid rules + AI reasoning architecture.",
+      icon: <Brain className="w-6 h-6" />,
+      githubLink: "https://github.com/Developer-s-Foundry/df-2.0-aima-recommendation-service",
+      image: "/aimas.jpg"
+    },
+    {
+      title: "WhoGoFixAm",
+      tech: "Express (Node.js), Typescript, PostgreSQL, Redis, WhatsApp API",
+      description: "A real-time artisan marketplace platform connecting clients with skilled workers using instant job matching and WhatsApp-based identity verification workflows.",
+      outcome: "Implemented production-grade OTP verification, workflow state management, and concurrency-safe job acceptance handling.",
+      icon: <Wrench className="w-6 h-6" />,
+      githubLink: "https://whogofixam.online",
+      image: "/whogofixam.JPG"
+    },
+    {
+      title: "LinkedIn Automation & Post Intelligence Tool",
+      tech: "Javascript, Express (Node.js), React, Chrome Extensions API, OpenAI/Groq",
+      description: "A Chrome extension that generates LinkedIn-ready posts and analyzes content performance potential using AI-driven engagement intelligence.",
+      outcome: "Streamlined AI-assisted content creation while providing predictive engagement insights for stronger social reach.",
+      icon: <TrendingUp className="w-6 h-6" />,
+      githubLink: "https://github.com/JasperZeroes/ai-powered_linkedin_post_automation",
+      image: "/linkedin-ai.jpg"
+    },
+    {
+      title: "AI-Powered EdTech Autograder",
+      tech: "Python, FastAPI, Docker, Celery, Redis, Judge0 API, OpenAI API",
+      description: "An intelligent code evaluation platform where students submit assignments, execute code securely in sandboxed environments, and receive AI-generated personalized feedback.",
+      outcome: "Automated code assessment workflows with scalable execution pipelines and structured AI feedback generation.",
+      icon: <Code className="w-6 h-6" />,
+      githubLink: "https://github.com/Developer-s-Foundry/edtech-autograder-system",
+      image: "/autograder.jpg"
+    },
+    {
       title: "Freelancers Alert (SaaS)",
       tech: "Python, Django, Upwork rss, Cron Jobs",
       description: "A SaaS app that alerts Upwork freelancers when relevant job postings go live. It scrapes and filters jobs based on category and skills, then sends real-time email alerts.",
@@ -86,7 +125,7 @@ function App() {
       description: "Built an AI-powered HR tool that matched over 2,000 freelancers to jobs based on skills and job descriptions. Leveraged LLMs for semantic matching.",
       outcome: "Reduced manual job-matching time by 35% and improved placement accuracy by 23%",
       icon: <Briefcase className="w-6 h-6" />,
-      githubLink: "https://github.com/jasperzeroes",
+      githubLink: "https://m365connect.com",
       image: "/hr-automation.png"
     }
   ];
@@ -94,18 +133,30 @@ function App() {
   const experiences = [
     {
       title: "Software Engineer",
+      company: "Developer's Foundry",
+      period: "09/2025 – 04/2026",
+      achievements: [
+        // Situation + Task + Action + Result
+        "Selected for an intensive fellowship designed to transition developers from entry-level to intermediate-level through structured mentorship, advanced technical training, and real-world team projects.",
+
+        "Collaborating with developers across Africa to build scalable, production-ready software using modern frameworks.",
+
+        "Deepening technical expertise in backend development, AI integration, and cloud deployment.",
+
+        "Receiving hands-on mentorship from senior engineers and industry experts.",
+      ]
+    },
+    {
+      title: "Software Engineer",
       company: "Aptech Learning",
       period: "06/2024 – 07/2025",
       achievements: [
         // Situation + Task + Action + Result
         "Led full-time technical training for over 50 students in a career-focused software engineering program. Designed a comprehensive curriculum blending theory with hands-on projects across JavaScript, React, HTML/CSS, and database design to simulate real-world engineering challenges.",
-        
         // Task + Action
         "Created, administered, and reviewed over 15 real-world project assessments. These covered areas like frontend development, API consumption, and CRUD app design—ensuring students were job-ready by simulating industry environments.",
-        
         // Situation + Action + Result
         "Mentored students in deploying web applications to cloud platforms, integrating machine learning models into existing systems, and debugging production-like issues. Provided individualized feedback during weekly code reviews.",
-        
         // Result
         "Achieved an 85% internship or full-time placement rate for students within 6 months of graduation by facilitating mock interviews, code-along sessions, and portfolio development workshops."
       ]
@@ -135,20 +186,68 @@ function App() {
   ];
 
   const skills = {
-    languages: ["Python", "JavaScript", "Dart", "TypeScript", "C", "C#", "SQL", "HTML5", "CSS3", "PHP", "R"],
-    frameworks: ["Django", "Flask", "Flutter", "OpenAI API", "REST APIs", "Git","GitHub", "Node.js"],
-    databases: ["MySQL", "PostgreSQL", "MSSQL Server", "SQLite", "MongoDB", "Firebase", "Supabase"],
-    other: ["Web Scraping", "Selenium", "Webdriver", "PlayWright", "Scrapy", "Automation", "AI/ML Integration", "Streamlit", "API Development", "Comet", "Notion"]
+    languages: ["Python", "JavaScript (TypeScript)", "SQL"],
+
+    backend: [
+      "FastAPI",
+      "Flask",
+      "Django",
+      "Node.js (Express)",
+      "REST API Design",
+      "Microservices Architecture",
+    ],
+
+    aiAutomation: [
+      "LLM Integration",
+      "AI Workflow Design",
+      "Prompt Structuring",
+      "Decision Systems",
+      "Automation",
+    ],
+
+    infrastructure: [
+      "Docker",
+      "RabbitMQ",
+      "Redis",
+      "Celery",
+      "PostgreSQL",
+      "SQLite",
+      "MySQL",
+      "MongoDB",
+    ],
+
+    systemDesign: [
+      "Event-Driven Architecture",
+      "State Management",
+      "Concurrency Handling",
+      "Fault Tolerance",
+      "Data Integrity",
+    ],
+
+    frontend: [
+      "React",
+      "Chrome Extension Development",
+    ],
+
+    other: [
+      "API Integrations",
+      "Web Scraping",
+      "Playwright",
+      "Selenium",
+      "Async Processing",
+      "Git",
+      "GitHub",
+    ],
   };
 
   const education = [
     {
-      title: "BSc, Computer Science - 2025",
+      title: "BSc, Computer Science - 2026",
       institution: "University of the People, USA",
       score: ""
     },
     {
-      title: "Diploma, Software Engineering - 2024",
+      title: "Diploma, Software Engineering - 2025",
       institution: "ALX, Africa ",
       score: ""
     },
@@ -371,12 +470,11 @@ function App() {
                 </span>
               </h1>
               <h2 className="text-2xl md:text-3xl text-gray-300 mb-6">
-                Backend-Focused Software Developer
+                Software Developer | Backend Systems Architect
               </h2>
               <p className="text-lg md:text-xl text-gray-400 max-w-4xl leading-relaxed">
-                I build scalable web applications and automation systems using Python, Django, and modern web technologies. 
-                With over 2+ years of industry experience and a passion for solving real-world problems, I help organizations 
-                bring ideas to life with clean, efficient, and scalable code.
+                I design and build intelligent systems that automate real-world workflows — from AI-driven code evaluation platforms to event-driven microservices and real-time service marketplaces.
+                I build systems that handle state, failures, and scale.
               </p>
             </div>
 
@@ -400,7 +498,7 @@ function App() {
           {/* Right: Profile Image */}
           <div className="md:w-1/3 flex justify-center">
             <img 
-              src="/chima.jpg" 
+              src="/chima.png" 
               alt="Chima Enyeribe" 
               className="w-80 h-80 rounded-full object-cover border-4 border-blue-500 shadow-lg"
             />
@@ -418,29 +516,31 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                I'm a Software Developer with 2+ years of professional experience building backend systems, 
-                automating workflows, and developing web applications. My career spans work in EdTech, HR automation, 
-                and remote team collaboration tools—sectors where I've delivered real-world solutions that impact 
-                users and systems at scale.
+                I am a backend-focused software engineer with a strong interest in AI-driven systems and workflow automation.
+                My work sits at the intersection of backend engineering and applied AI — building systems that don’t just generate outputs, but make decisions, trigger actions, and handle real-world complexity.
+                </p>
+                <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                I have designed and built production-grade systems including a real-time service marketplace, an AI-powered code evaluation platform, and event-driven microservices that process system metrics and generate actionable recommendations.
+                I focus heavily on system design, reliability, and correctness — thinking through state management, failure handling, concurrency, and data integrity from the ground up.
+                I thrive in environments where I can take ownership, make architectural decisions, and ship systems that solve real problems.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                With a background in technical instruction (4+ years), I bring both technical depth and the ability 
-                to clearly communicate ideas—whether mentoring developers or debugging production issues. I specialize 
-                in Django, REST APIs, and data-driven + AI-integrated systems.
+                With a background in STEM instruction (4+ years), I bring both technical depth and the ability 
+                to clearly communicate ideas—whether mentoring developers or debugging production issues.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                When I'm not coding, you'll find me learning about AI tools, contributing to open-source, 
-                or helping students break into tech.
+                When I'm not building, you'll find me learning about AI tools, contributing to open-source projects, 
+                or helping young professionals break into tech.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-slate-700/50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-2 text-blue-400">2+ Years</h3>
+                <h3 className="text-xl font-semibold mb-2 text-blue-400">3+ Years</h3>
                 <p className="text-gray-300">Backend & Full-stack Development</p>
               </div>
               <div className="bg-slate-700/50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-2 text-purple-400">4+ Years</h3>
-                <p className="text-gray-300">Technical Mentoring</p>
+                <p className="text-gray-300">STEM Mentoring</p>
               </div>
               <div className="bg-slate-700/50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-2 text-green-400">Python, Django, APIs, JavaScript, Typescript, HTML, CSS</h3>
@@ -491,7 +591,7 @@ function App() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
                   >
-                    <Github size={16} /> GitHub Repo <ExternalLink size={14} />
+                    <Github size={16} /> GitHub Repo/Visit live application <ExternalLink size={14} />
                   </a>
                 </div>
               </div>
@@ -535,8 +635,11 @@ function App() {
       {/* Skills Section */}
       <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-16">Technical Skills</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <h2 className="text-4xl font-bold text-center mb-16">
+            Technical Skills
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-slate-800/50 p-6 rounded-xl">
               <div className="flex items-center gap-3 mb-4">
                 <Code className="text-blue-400" size={24} />
@@ -550,43 +653,71 @@ function App() {
                 ))}
               </div>
             </div>
-            
+
             <div className="bg-slate-800/50 p-6 rounded-xl">
               <div className="flex items-center gap-3 mb-4">
                 <Server className="text-purple-400" size={24} />
-                <h3 className="text-xl font-semibold">Frameworks</h3>
+                <h3 className="text-xl font-semibold">Backend & Systems</h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                {skills.frameworks.map((skill, index) => (
+                {skills.backend.map((skill, index) => (
                   <span key={index} className="bg-purple-900/30 text-purple-300 px-3 py-1 rounded-full text-sm">
                     {skill}
                   </span>
                 ))}
               </div>
             </div>
-            
+
+            <div className="bg-slate-800/50 p-6 rounded-xl">
+              <div className="flex items-center gap-3 mb-4">
+                <Award className="text-yellow-400" size={24} />
+                <h3 className="text-xl font-semibold">AI & Automation</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {skills.aiAutomation.map((skill, index) => (
+                  <span key={index} className="bg-yellow-900/30 text-yellow-300 px-3 py-1 rounded-full text-sm">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
             <div className="bg-slate-800/50 p-6 rounded-xl">
               <div className="flex items-center gap-3 mb-4">
                 <Database className="text-green-400" size={24} />
-                <h3 className="text-xl font-semibold">Databases</h3>
+                <h3 className="text-xl font-semibold">Infrastructure & Data</h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                {skills.databases.map((skill, index) => (
+                {skills.infrastructure.map((skill, index) => (
                   <span key={index} className="bg-green-900/30 text-green-300 px-3 py-1 rounded-full text-sm">
                     {skill}
                   </span>
                 ))}
               </div>
             </div>
-            
+
             <div className="bg-slate-800/50 p-6 rounded-xl">
               <div className="flex items-center gap-3 mb-4">
-                <Award className="text-orange-400" size={24} />
-                <h3 className="text-xl font-semibold">Other</h3>
+                <Server className="text-cyan-400" size={24} />
+                <h3 className="text-xl font-semibold">System Design</h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                {skills.other.map((skill, index) => (
-                  <span key={index} className="bg-orange-900/30 text-orange-300 px-3 py-1 rounded-full text-sm">
+                {skills.systemDesign.map((skill, index) => (
+                  <span key={index} className="bg-cyan-900/30 text-cyan-300 px-3 py-1 rounded-full text-sm">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-slate-800/50 p-6 rounded-xl">
+              <div className="flex items-center gap-3 mb-4">
+                <Code className="text-pink-400" size={24} />
+                <h3 className="text-xl font-semibold">Frontend & Tools</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {[...skills.frontend, ...skills.other].map((skill, index) => (
+                  <span key={index} className="bg-pink-900/30 text-pink-300 px-3 py-1 rounded-full text-sm">
                     {skill}
                   </span>
                 ))}
@@ -595,7 +726,6 @@ function App() {
           </div>
         </div>
       </section>
-
 
       {/* Hackathons Section */}
       <section id="hackathons" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
