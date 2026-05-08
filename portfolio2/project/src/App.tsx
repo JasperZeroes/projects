@@ -26,6 +26,7 @@ import {
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [isMoreOpen, setIsMoreOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -415,21 +416,37 @@ function App() {
             ))}
 
             {/* "More" dropdown */}
-            <div className="relative group">
-              <button className="transition-colors duration-200 hover:text-blue-400 text-gray-300">
+            <div className="relative">
+              <button
+                onClick={() => setIsMoreOpen((prev) => !prev)}
+                className="transition-colors duration-200 hover:text-blue-400 text-gray-300"
+              >
                 More
               </button>
-              <div className="absolute hidden group-hover:block mt-2 bg-slate-900 border border-slate-700 rounded shadow-lg z-10">
-                {['Experience', 'Skills', 'Hackathons', 'Education', 'Certifications', 'Volunteering'].map((item) => (
-                  <button
-                    key={item}
-                    onClick={() => scrollToSection(item.toLowerCase())}
-                    className="block w-full text-left px-4 py-2 text-gray-300 hover:text-blue-400 hover:bg-slate-800"
-                  >
-                    {item}
-                  </button>
-                ))}
-              </div>
+
+              {isMoreOpen && (
+                <div className="absolute right-0 mt-2 w-48 bg-slate-900 border border-slate-700 rounded shadow-lg z-50">
+                  {[
+                    'Experience',
+                    'Skills',
+                    'Hackathons',
+                    'Education',
+                    'Certifications',
+                    'Volunteering',
+                  ].map((item) => (
+                    <button
+                      key={item}
+                      onClick={() => {
+                        scrollToSection(item.toLowerCase());
+                        setIsMoreOpen(false);
+                      }}
+                      className="block w-full text-left px-4 py-2 text-gray-300 hover:text-blue-400 hover:bg-slate-800"
+                    >
+                      {item}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
 
