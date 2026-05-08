@@ -80,7 +80,7 @@ function App() {
       description: "A Chrome extension that generates LinkedIn-ready posts and analyzes content performance potential using AI-driven engagement intelligence.",
       outcome: "Streamlined AI-assisted content creation while providing predictive engagement insights for stronger social reach.",
       icon: <TrendingUp className="w-6 h-6" />,
-      githubLink: "https://github.com/JasperZeroes/ai-powered_linkedin_post_automation",
+      githubLink: "https://github.com/JasperZeroes/ai-powered_linkedin_post_automation-post_intelligence_analyzer",
       image: "/linkedin-ai.jpg"
     },
     {
