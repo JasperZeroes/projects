@@ -72,7 +72,7 @@ function App() {
       description: "A real-time artisan marketplace platform connecting clients with skilled workers using instant job matching and WhatsApp-based identity verification workflows.",
       outcome: "Implemented production-grade OTP verification, workflow state management, and concurrency-safe job acceptance handling.",
       icon: <Wrench className="w-6 h-6" />,
-      githubLink: "https://whogofixam.online",
+      githubLink: "https://profound-macaron-e7d2ac.netlify.app/",
       image: "/whogofixam.JPG"
     },
     {
@@ -487,7 +487,7 @@ function App() {
                 </span>
               </h1>
               <h2 className="text-2xl md:text-3xl text-gray-300 mb-6">
-                Software Developer | Backend Systems Architect
+                Software Engineer | Backend Systems Architect
               </h2>
               <p className="text-lg md:text-xl text-gray-400 max-w-4xl leading-relaxed">
                 I design and build intelligent systems that automate real-world workflows — from AI-driven code evaluation platforms to event-driven microservices and real-time service marketplaces.
@@ -608,7 +608,7 @@ function App() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
                   >
-                    <Github size={16} /> GitHub Repo/Visit live application <ExternalLink size={14} />
+                    <Github size={16} /> GitHub Repo/Live application <ExternalLink size={14} />
                   </a>
                 </div>
               </div>
